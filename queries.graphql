@@ -1,0 +1,53 @@
+mutation {
+  saveProduct(datos: {
+    name: "Teclado redragon",
+    price: 15500,
+    urlImage: "aca ta la uri",
+    description: "teclado rgb mecanico que safa",
+    code: 123,
+    stock: 52
+  }) {
+    id
+    name
+    price
+  }
+}
+
+query {
+  getProducts {
+    id
+    name
+    price
+  }
+}
+
+query { 
+  getProductById(id: "30b501ef-386a-45be-91e4-0bf862c541c6") {
+    id
+    name
+    price
+  }
+}
+
+mutation {
+  updateProductById(id: "30b501ef-386a-45be-91e4-0bf862c541c6", datos: {
+    name: "Teclado redragon actualizado",
+    price: 11111,
+    urlImage: "aca ta la uri actualizada",
+    description: "teclado rgb mecanico que safa actualizado",
+    code: 222,
+    stock: 10
+  }) {
+    id
+    name
+    price
+  }
+}
+
+mutation {
+  deleteProductById(id: "30b501ef-386a-45be-91e4-0bf862c541c6") {
+    id
+    name
+    price
+  }
+}

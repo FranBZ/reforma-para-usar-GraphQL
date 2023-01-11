@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Teclado Hyperex",
+    "price": 25000,
+    "urlImage": "aca ta la uri",
+    "description": "teclado rgb mecanico soñado",
+    "code": 456,
+    "stock": 5,
+    "id": "3034feb5-006b-45a8-ad5b-fe26505f6e35",
+    "timeStamp": 1673465423955
+  }
+]
